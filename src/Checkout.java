@@ -49,9 +49,8 @@ public class Checkout extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==stop) {
-			
-			System.exit(0);
+		if(e.getSource()==stop) {		
+	    System.exit(0);
 		}else if(e.getSource()==addNew) {
 			MainFrame.writeFile();
 			new Pizzaz();

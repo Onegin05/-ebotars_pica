@@ -10,18 +10,18 @@ import javax.swing.JPanel;
 
 public class Topping extends JFrame implements ActionListener{
 	JButton peperoni = new JButton("PEPERONI  2 euro");
-	JButton bacon = new JButton("BACON  2 euro ");
-	JButton cheese = new JButton("EXTRA CHEESE 2 euro");
-	JButton bbq = new JButton("CRISPY ONIONS 2 euro ");
-	JButton noTopping = new JButton("Without Toppings");
+	JButton bacons = new JButton("BECONS  2 euro ");
+	JButton siers = new JButton("EXTRA SIERS 2 euro");
+	JButton sipols = new JButton("SIPOLS 2 euro ");
+	JButton noTopping = new JButton("BEZ PAPILDINAJUMI");
   	public Topping() {
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
-		JLabel picerijaName = new JLabel("Piedavajumi");
+		JLabel picerijaName = new JLabel("Papildinajumi");
 		
 		Font font1 = new Font(Font.SANS_SERIF,  Font.BOLD, 35);
 		picerijaName.setFont(font1);
-		picerijaName.setBounds(300, 10, 700, 70);
+		picerijaName.setBounds(270, 10, 700, 70);
 		panel.add(picerijaName);
 		add(panel);
       
@@ -44,21 +44,21 @@ public class Topping extends JFrame implements ActionListener{
 		noTopping.setBounds(150, 750, 300, 30);
 		panel.add(noTopping);
 		
-		panel.add(bacon);
+		panel.add(bacons);
 		panel.add(peperoni);
-		panel.add(cheese);
-		panel.add(bbq);
+		panel.add(siers);
+		panel.add(sipols);
 		
-		bacon.addActionListener(this);
+		bacons.addActionListener(this);
 		peperoni.addActionListener(this);
-		cheese.addActionListener(this);
-		bbq.addActionListener(this);
+		siers.addActionListener(this);
+		sipols.addActionListener(this);
 		noTopping.addActionListener(this);
 		
-		bacon.setBounds(50, 370, 300, 30);
+		bacons.setBounds(50, 370, 300, 30);
 		peperoni.setBounds(350, 370, 300, 30);
-		cheese.setBounds(50, 700, 300, 30);
-		bbq.setBounds(350,700, 300, 30);
+		siers.setBounds(50, 700, 300, 30);
+		sipols.setBounds(350,700, 300, 30);
 		
 		setVisible(true);
 		int garums = 700;
@@ -69,7 +69,7 @@ public class Topping extends JFrame implements ActionListener{
   	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==bacon) {
+		if(e.getSource()==bacons) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: bekons\n";
 			Checkout.str += "Kopâ: "+MainFrame.summa+"€\n\n";
@@ -81,13 +81,13 @@ public class Topping extends JFrame implements ActionListener{
 			Checkout.str += "Kopâ: "+MainFrame.summa+"€\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
-		}else if(e.getSource()==cheese) {
+		}else if(e.getSource()==siers) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: Siers\n";
 			Checkout.str += "Kopâ: "+MainFrame.summa+"€\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
-		}else if(e.getSource()==bbq) {
+		}else if(e.getSource()==sipols) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: Sîpoli\n";
 			Checkout.str += "Kopâ: "+MainFrame.summa+"€\n\n";

@@ -148,3 +148,13 @@ Piedevas: Sīpoli
 Kopā: 21.0€
 
 
+Vārds: 
+Numurs: 
+Adrese: 
+Piegāde: saņemt restauranā
+Pica: Margarita pica
+Izmērs: 50cm
+Piedevas: Sīpoli
+Kopā: 21.0€
+
+
