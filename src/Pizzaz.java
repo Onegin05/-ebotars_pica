@@ -1,4 +1,6 @@
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -6,12 +8,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Picas extends JFrame {
+public class Pizzaz extends JFrame implements ActionListener{
 	JButton dB = new JButton("Desu pica");
 	JButton mB = new JButton("Margarita pica");
 	JButton rB = new JButton("Rikkota pica");
 	JButton hB = new JButton("Havaiju pica");
-	public Picas() {
+	public Pizzaz() {
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
 		JLabel picerijaName = new JLabel("Picas");
@@ -50,11 +52,32 @@ public class Picas extends JFrame {
 		hB.setBounds(50, 700, 300, 30);
 		rB.setBounds(350,700, 300, 30);
 		
+		dB.addActionListener(this);
+		rB.addActionListener(this);
+		mB.addActionListener(this);
+		hB.addActionListener(this);
+		
 		setVisible(true);
 		int garums = 700;
 		int platums =1000;
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(garums,platums);
 		setLocation(1920/2 - garums/2, 1080/2 - platums/2);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==dB) {
+			Checkout.str += "Pica: Desu pica\n";
+			new Izmers();
+		}else if(e.getSource()==mB) {
+			Checkout.str += "Pica: Margarita pica\n";
+			new Izmers();
+		}else if(e.getSource()==hB) {
+			Checkout.str += "Pica: Havaiju pica\n";
+			new Izmers();
+		}else if(e.getSource()==rB) {
+			Checkout.str += "Pica: Rikkota pica\n";
+			new Izmers();
+		}
 	}
 }
