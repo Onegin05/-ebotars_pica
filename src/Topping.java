@@ -7,58 +7,58 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
+@SuppressWarnings("serial")
 public class Topping extends JFrame implements ActionListener{
-	JButton peperoni = new JButton("PEPERONI  2 euro");
-	JButton bacons = new JButton("BECONS  2 euro ");
-	JButton siers = new JButton("EXTRA SIERS 2 euro");
-	JButton sipols = new JButton("SIPOLS 2 euro ");
-	JButton noTopping = new JButton("BEZ PAPILDINAJUMI");
+	JButton peperoni = new JButton("PEPERONI");
+	JButton bacon = new JButton("BACON");
+	JButton cheese = new JButton("EXTRA CHEESE");
+	JButton bbq = new JButton("CRISPY ONIONS");
+	JButton noTopping = new JButton("Without Toppings");
   	public Topping() {
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
-		JLabel picerijaName = new JLabel("Papildinajumi");
+		JLabel picerijaName = new JLabel("Topping");
 		
 		Font font1 = new Font(Font.SANS_SERIF,  Font.BOLD, 35);
 		picerijaName.setFont(font1);
-		picerijaName.setBounds(270, 10, 700, 70);
+		picerijaName.setBounds(300, 10, 700, 70);
 		panel.add(picerijaName);
 		add(panel);
       
-		JLabel beconTop = new JLabel(new ImageIcon("becons.jpg"));
+		JLabel beconTop = new JLabel(new ImageIcon("bacon.jpg"));
 		panel.add(beconTop);
 		beconTop.setBounds(50,70,300,300);
 		
-		JLabel peperoniTop = new JLabel(new ImageIcon("Peperoni.jpg"));
+		JLabel peperoniTop = new JLabel(new ImageIcon("desa.jpg"));
 		panel.add(peperoniTop);
 		peperoniTop.setBounds(350,70,300,300);
 		
-		JLabel cheeseTop = new JLabel(new ImageIcon("Extra siers.jpg"));
+		JLabel cheeseTop = new JLabel(new ImageIcon("cheese.jpg"));
 		panel.add(cheeseTop);
 		cheeseTop.setBounds(50,400,300,300);
 		
-		JLabel onion = new JLabel(new ImageIcon("SÓpols.jpg"));
+		JLabel onion = new JLabel(new ImageIcon("onion.jpg"));
 		panel.add(onion);
 		onion.setBounds(350,400,300,300);
 		
 		noTopping.setBounds(150, 750, 300, 30);
 		panel.add(noTopping);
 		
-		panel.add(bacons);
+		panel.add(bacon);
 		panel.add(peperoni);
-		panel.add(siers);
-		panel.add(sipols);
+		panel.add(cheese);
+		panel.add(bbq);
 		
-		bacons.addActionListener(this);
+		bacon.addActionListener(this);
 		peperoni.addActionListener(this);
-		siers.addActionListener(this);
-		sipols.addActionListener(this);
+		cheese.addActionListener(this);
+		bbq.addActionListener(this);
 		noTopping.addActionListener(this);
 		
-		bacons.setBounds(50, 370, 300, 30);
+		bacon.setBounds(50, 370, 300, 30);
 		peperoni.setBounds(350, 370, 300, 30);
-		siers.setBounds(50, 700, 300, 30);
-		sipols.setBounds(350,700, 300, 30);
+		cheese.setBounds(50, 700, 300, 30);
+		bbq.setBounds(350,700, 300, 30);
 		
 		setVisible(true);
 		int garums = 700;
@@ -69,32 +69,32 @@ public class Topping extends JFrame implements ActionListener{
   	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==bacons) {
+		if(e.getSource()==bacon) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: bekons\n";
-			Checkout.str += "Kop‚: "+MainFrame.summa+"Ä\n\n";
-		    MainFrame.summa = 0;
+			Checkout.str += "KopƒÅ: "+MainFrame.summa+"‚Ç¨\n\n";
+			MainFrame.summa = 0;
 			new Checkout();
 		}else if(e.getSource()==peperoni) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: Desa peperoni\n";
-			Checkout.str += "Kop‚: "+MainFrame.summa+"Ä\n\n";
+			Checkout.str += "KopƒÅ: "+MainFrame.summa+"‚Ç¨\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
-		}else if(e.getSource()==siers) {
+		}else if(e.getSource()==cheese) {
 			MainFrame.summa += 2.00;
 			Checkout.str += "Piedevas: Siers\n";
-			Checkout.str += "Kop‚: "+MainFrame.summa+"Ä\n\n";
+			Checkout.str += "KopƒÅ: "+MainFrame.summa+"‚Ç¨\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
-		}else if(e.getSource()==sipols) {
+		}else if(e.getSource()==bbq) {
 			MainFrame.summa += 2.00;
-			Checkout.str += "Piedevas: SÓpoli\n";
-			Checkout.str += "Kop‚: "+MainFrame.summa+"Ä\n\n";
+			Checkout.str += "Piedevas: Sƒ´poli\n";
+			Checkout.str += "KopƒÅ: "+MainFrame.summa+"‚Ç¨\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
 		}else if(e.getSource()==noTopping) {
-			Checkout.str += "Kop‚: "+MainFrame.summa+"Ä\n\n";
+			Checkout.str += "KopƒÅ: "+MainFrame.summa+"‚Ç¨\n\n";
 			MainFrame.summa = 0;
 			new Checkout();
 		}

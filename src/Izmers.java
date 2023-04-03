@@ -7,9 +7,9 @@ import javax.swing.JPanel;
 
 public class Izmers extends JFrame implements ActionListener{
 	
-	JButton size20 = new JButton("20cm 8  euro");
-	JButton size30 = new JButton("30cm 10 euro");
-	JButton size50 = new JButton("50cm 14 euro");
+	JButton size20 = new JButton("20cm");
+	JButton size30 = new JButton("30cm");
+	JButton size50 = new JButton("50cm");
 	
 	public Izmers() {
 		
@@ -41,16 +41,16 @@ public class Izmers extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==size20) {
 			MainFrame.summa += 8;
-			Checkout.str += "Izmçrs: "+20+"cm\n";
+			Checkout.str += "IzmÄ“rs: "+20+"cm\n";
 			new Topping();
 		}else if(e.getSource()==size30) {
 			MainFrame.summa += 10;
-			Checkout.str += "Izmçrs: "+30+"cm\n";
+			Checkout.str += "IzmÄ“rs: "+30+"cm\n";
 			new Topping();
 		}else if(e.getSource()==size50) {
 			MainFrame.summa += 14;
 			new Topping();
-			Checkout.str += "Izmçrs: "+50+"cm\n";
+			Checkout.str += "IzmÄ“rs: "+50+"cm\n";
 		}
 		
 	}

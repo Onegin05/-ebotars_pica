@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 
 public class Main{
 
@@ -23,5 +24,6 @@ public class Main{
 			
 		}
 	}
+	
 
 }

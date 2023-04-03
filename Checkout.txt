@@ -1,85 +1,25 @@
 Vārds: 
 Numurs: 
 Adrese: 
-Piegāde: saņemt restauranā
-Pica: Desu pica
-Izmērs: 50cm
-Piedevas: Desa peperoni
-Kopā: 21.0€
-
-
-Vārds: 
-Numurs: 
-Adrese: 
-Piegāde: saņemt restauranā
-Pica: Margarita pica
-Izmērs: 30cm
-Piedevas: Sīpoli
-Kopā: 17.0€
-
-
-Vārds: 
-Numurs: 
-Adrese: 
 Piegāde: piegāde līdz mājām
-Pica: Rikkota pica
-Izmērs: 50cm
-Piedevas: Sīpoli
-Kopā: 16.0€
-
-
-Vārds: 
-Numurs: 
-Adrese: 
-Piegāde: piegāde līdz mājām
-Pica: Rikkota pica
-Izmērs: 50cm
-Piedevas: Sīpoli
-Kopā: 16.0€
-
-Pica: Havaiju pica
-Izmērs: 30cm
-Piedevas: Desa peperoni
-Kopā: 12.0€
-
-
-Vārds: 
-Numurs: 
-Adrese: 
-Piegāde: piegāde līdz mājām
-Pica: Rikkota pica
-Izmērs: 50cm
-Piedevas: Sīpoli
-Kopā: 16.0€
-
-Pica: Havaiju pica
-Izmērs: 30cm
-Piedevas: Desa peperoni
-Kopā: 12.0€
-
-Pica: Desu pica
-Izmērs: 30cm
-Piedevas: Siers
-Kopā: 12.0€
-
-
-Vārds: 
-Numurs: 
-Adrese: 
-Piegāde: saņemt restauranā
 Pica: Margarita pica
 Izmērs: 30cm
 Piedevas: Desa peperoni
 Kopā: 17.0€
 
 
-Vārds: vards
-Numurs: vards
-Adrese: vards
+Vārds: 
+Numurs: 
+Adrese: 
 Piegāde: piegāde līdz mājām
-Pica: Desu pica
+Pica: Margarita pica
 Izmērs: 30cm
-Piedevas: Siers
+Piedevas: Desa peperoni
+Kopā: 17.0€
+
+Pica: Rikkota pica
+Izmērs: 30cm
+Piedevas: bekons
 Kopā: 12.0€
 
 
@@ -87,64 +27,19 @@ Vārds:
 Numurs: 
 Adrese: 
 Piegāde: saņemt restauranā
-Pica: Rikkota pica
-Izmērs: 50cm
-Piedevas: Desa peperoni
-Kopā: 21.0€
-
-
-Vārds: LOLO
-Numurs: lolo
-Adrese: lolo
-Piegāde: piegāde līdz mājām
-Pica: Havaiju pica
-Izmērs: 50cm
-Piedevas: Siers
-Kopā: 16.0€
-
-
-Vārds: LOLO
-Numurs: lolo
-Adrese: lolo
-Piegāde: piegāde līdz mājām
-Pica: Havaiju pica
-Izmērs: 50cm
-Piedevas: Siers
-Kopā: 16.0€
-
-Pica: Rikkota pica
-Izmērs: 30cm
-Piedevas: Siers
-Kopā: 12.0€
-
-
-Vārds: LOLO
-Numurs: lolo
-Adrese: lolo
-Piegāde: piegāde līdz mājām
-Pica: Havaiju pica
-Izmērs: 50cm
-Piedevas: Siers
-Kopā: 16.0€
-
-Pica: Rikkota pica
-Izmērs: 30cm
-Piedevas: Siers
-Kopā: 12.0€
-
 Pica: Desu pica
-Izmērs: 50cm
+Izmērs: 20cm
 Piedevas: Desa peperoni
-Kopā: 16.0€
+Kopā: 15.0€
 
 
 Vārds: 
 Numurs: 
 Adrese: 
 Piegāde: saņemt restauranā
-Pica: Rikkota pica
+Pica: Margarita pica
 Izmērs: 50cm
-Piedevas: Sīpoli
+Piedevas: bekons
 Kopā: 21.0€
 
 
@@ -154,7 +49,27 @@ Adrese:
 Piegāde: saņemt restauranā
 Pica: Margarita pica
 Izmērs: 50cm
-Piedevas: Sīpoli
+Piedevas: bekons
 Kopā: 21.0€
+
+
+Vārds: 
+Numurs: 
+Adrese: 
+Piegāde: saņemt restauranā
+Pica: Margarita pica
+Izmērs: 20cm
+Piedevas: bekons
+Kopā: 15.0€
+
+
+Vārds: 
+Numurs: 
+Adrese: 
+Piegāde: saņemt restauranā
+Pica: Margarita pica
+Izmērs: 30cm
+Piedevas: Desa peperoni
+Kopā: 17.0€
 
 
