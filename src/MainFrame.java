@@ -16,7 +16,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	static JTextField userText = new JTextField();
 	static JTextField nText = new JTextField();
 	static JTextField adressText = new JTextField();
-	public MainFrame() { /// public void, string , int 
+	public MainFrame() {
 		int garums = 700;
 		int platums= 400;
 		setVisible(true);
@@ -25,7 +25,7 @@ public class MainFrame extends JFrame implements ActionListener{
 		setSize(350,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		add(panel);
-		JLabel picerijaName = new JLabel("Picerija \"ArtjomËiks\"");
+		JLabel picerijaName = new JLabel("Picerija \"Artjomƒçiks\"");
 		Font  font1  = new Font(Font.SANS_SERIF,  Font.BOLD, 35);
 		picerijaName.setFont(font1);
 		JLabel picture = new JLabel(new ImageIcon("images.png"));
@@ -33,7 +33,7 @@ public class MainFrame extends JFrame implements ActionListener{
 		//user
 		picerijaName.setBounds(170, 10, 700, 70);
 		panel.add(picerijaName);
-	    JLabel userLabel = new JLabel("Vards");
+	    JLabel userLabel = new JLabel("Name");
 		userLabel.setBounds(10, 80, 80, 25);
 		panel.add(userLabel);
 		
@@ -41,7 +41,7 @@ public class MainFrame extends JFrame implements ActionListener{
 		panel.add(userText);
 		
 		//number
-		JLabel nLabel = new JLabel("Talrunis");
+		JLabel nLabel = new JLabel("Number");
 	    nLabel.setBounds(10, 110, 80, 25);
 		panel.add(nLabel);
 		 	
@@ -50,7 +50,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	    panel.add(nText);
 	    
 	    //number
-	  	JLabel adressLabel = new JLabel("Adresse");
+	  	JLabel adressLabel = new JLabel("Adress");
 	    adressLabel.setBounds(10, 140, 80, 25);
 	  	panel.add(adressLabel);
 	  	 	
@@ -84,14 +84,14 @@ public class MainFrame extends JFrame implements ActionListener{
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter("Checkout.txt", true));
 			
-			String str = "V‚rds: "+userText.getText()+"\nNumurs: "+nText.getText()+"\nAdrese: "+adressText.getText()+"\n";
+			String str = "VƒÅrds: "+userText.getText()+"\nNumurs: "+nText.getText()+"\nAdrese: "+adressText.getText()+"\n";
 			str += Checkout.str;
 			
 			writer.println(str);
 			
 			writer.close();
 		}catch(Exception e) {
-			JOptionPane.showMessageDialog(null, "KÔ˚da ierakstot datus fail‚", "KÔ˚da", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Kƒº≈´da ierakstot datus failƒÅ", "Kƒº≈´da", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
