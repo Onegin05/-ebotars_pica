@@ -17,4 +17,4 @@ pēc tam jūsu pasūtījums tiks rakstīts teksta failā, un, ja jūs izvēlatie
  - [x]  Ir iespēja aizvērt programmu un izvēlēties citu picu.
  - [x]  Jūsu pasūtījums tiks ierakstīts teksta failā.
  - [x]  Programma pievienota uz github
- - [ ]  Programmā ir novērstas kļūdas
+ - [x]  Programmā ir novērstas kļūdas
