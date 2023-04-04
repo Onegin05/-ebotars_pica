@@ -4,7 +4,7 @@
 
 Labdien visiem, kas skatās uz manu failu. Šeit jūs varat atrast manu programmu, kas darbojas kā picas piegādes ēdienkarte. 
 Jūs varat izvēlēties, kā vēlaties saņemt picu (piegādāta vai piegādāta uz restorānu),
-jūs varat izvēlēties vienu vai 4 picas, pēc tam izvēlēties to lielumu, izvēlēties vienu no 4 piedevām vai neizvēlēties tos vispār,
+jūs varat izvēlēties vienu no 4 picas, pēc tam izvēlēties to lielumu, izvēlēties vienu no 4 piedevām vai neizvēlēties tos vispār,
 pēc tam jūsu pasūtījums tiks rakstīts teksta failā, un, ja jūs izvēlaties piegādi mājās teksta failā tiks rakstīts arī: vārds, adrese un tālruņa numurs.
 
 :pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza::pizza:
